@@ -5,7 +5,7 @@
 # Missing also shows onboarding; set false after you've chosen.
 # onboarding = true
 
-[theme]
+# [theme]
 # Built-in themes: catppuccin, terminal, tokyo-night, dracula, nord,
 #                  gruvbox, one-dark, solarized, kanagawa, rose-pine,
 #                  vesper
@@ -312,3 +312,8 @@ pane_history = false
 # Maximum scrollback buffer size in bytes retained per pane terminal.
 # Matches Ghostty's default scrollback-limit behavior.
 # scrollback_limit_bytes = 10000000
+
+# >>> themer theme (auto-managed) >>>
+[theme]
+name = "catppuccin"
+# <<< themer theme <<<
