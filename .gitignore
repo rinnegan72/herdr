@@ -2,4 +2,4 @@
 *.sock
 .plugins.lock
 session.json
-launch_congfigs/
+launch_configs/
