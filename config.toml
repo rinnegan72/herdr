@@ -1,3 +1,4 @@
+onboarding = false
 # herdr configuration
 # Place this file at ~/.config/herdr/config.toml
 
@@ -91,10 +92,10 @@ next_tab = "alt+l"
 # close_tab = "prefix+shift+x"
 # rename_pane = "prefix+shift+p"
 # edit_scrollback = "prefix+e"
-# focus_pane_left = "prefix+h"
-# focus_pane_down = "prefix+j"
-# focus_pane_up = "prefix+k"
-# focus_pane_right = "prefix+l"
+focus_pane_left = ""
+focus_pane_down = ""
+focus_pane_up = ""
+focus_pane_right = ""
 # cycle_pane_next = "prefix+tab"
 # cycle_pane_previous = "prefix+shift+tab"
 # last_pane = ""          # optional, unset by default; bind e.g. "prefix+tab" for global back-and-forth
@@ -126,6 +127,26 @@ split_horizontal = "prefix+minus"
 # command = "lazygit"
 # width = "80%"
 # height = "80%"
+
+[[keys.command]]
+key = "ctrl+h"
+type = "plugin_action"
+command = "local.vim-navigator.left"
+
+[[keys.command]]
+key = "ctrl+j"
+type = "plugin_action"
+command = "local.vim-navigator.down"
+
+[[keys.command]]
+key = "ctrl+k"
+type = "plugin_action"
+command = "local.vim-navigator.up"
+
+[[keys.command]]
+key = "ctrl+l"
+type = "plugin_action"
+command = "local.vim-navigator.right"
 
 # Legacy indexed shortcut config is still parsed for compatibility.
 # Prefer switch_tab, switch_workspace, and focus_agent for new configs.
@@ -315,5 +336,5 @@ pane_history = false
 
 # >>> themer theme (auto-managed) >>>
 [theme]
-name = "catppuccin"
+name = "nord"
 # <<< themer theme <<<

@@ -3,3 +3,4 @@
 .plugins.lock
 session.json
 launch_configs/
+plugins/
